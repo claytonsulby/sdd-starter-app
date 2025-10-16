@@ -15,6 +15,7 @@ description: "Task list template for feature implementation"
 - **[P]**: Can run in parallel (different files, no dependencies)
 - **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
 - Include exact file paths in descriptions
+- Stay inside the approved spec; escalate any new scope before adding tasks.
 
 ## Path Conventions
 - **Single project**: `src/`, `tests/` at repository root
@@ -246,5 +247,6 @@ With multiple developers:
 - Commit after each task or logical group
 - Stop at any checkpoint to validate story independently
 - Avoid: vague tasks, same file conflicts, cross-story dependencies that break independence
+- Keep implementations simple and clean; refactor before adding complexity.
 
 

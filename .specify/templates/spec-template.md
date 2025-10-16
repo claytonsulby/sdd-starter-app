@@ -5,6 +5,8 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+This spec MUST capture every requirement before implementation. Keep stories simple, keep the code clean, and revise this document before accepting new scope.
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

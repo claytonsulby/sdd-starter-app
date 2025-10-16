@@ -31,7 +31,10 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- ✅ Planned solution keeps the codebase clean; call out refactors if readability would suffer.
+- ✅ Implementation path is the simplest option that fulfils the spec without extra features.
+- ✅ Plan mirrors the approved spec exactly; update the spec before proposing any deviation.
+- ✅ No tasks introduce scope beyond the prioritized user stories.
 
 ## Project Structure
 

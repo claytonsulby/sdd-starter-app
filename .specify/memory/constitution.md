@@ -1,50 +1,42 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+- Version change: N/A → 1.0.0
+- Modified principles: None — new adoption
+- Added sections: Core Principles (fully populated), Execution Guardrails
+- Removed sections: None
+- Templates requiring updates:
+- Templates requiring updates:
+  ✅ .specify/templates/plan-template.md
+  ✅ .specify/templates/spec-template.md
+  ✅ .specify/templates/tasks-template.md
+- Follow-up TODOs: None
+-->
+# SDD Starter App Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Principle 1 — Write Clean Code
+All contributions MUST leave the codebase readable, covered by appropriate tests, and free of debt that the team cannot immediately address. When cleanliness and delivery are in tension, refactor first so the change stays maintainable.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Principle 2 — The Simpler The Better
+Deliver the smallest, clearest solution that satisfies the specification. Avoid speculative abstractions, unnecessary layers, or cleverness that hides intent.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Principle 3 — Do Exactly As Instructed
+Follow approved specs, prompts, and review feedback precisely. Raise questions before deviating; unapproved shortcuts or embellishments are not allowed.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Principle 4 — Prevent Scope Creep
+Freeze scope once the spec and plan are approved. Any new requirement MUST be documented, prioritized, and ratified before implementation work begins.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Execution Guardrails
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- Specs capture every user story before coding starts, and new ideas return to spec review before work proceeds.
+- Plans and tasks reference the approved scope so each deliverable maps cleanly to a single user story.
+- Code reviews and CI checks verify cleanliness and simplicity before merge.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- **Amendments**: Product owner and technical lead MUST approve changes. Record each amendment with rationale in the repo history.
+- **Versioning**: Apply semantic versioning to this constitution (MAJOR for breaking principle changes, MINOR for new or expanded rules, PATCH for clarifications).
+- **Compliance Reviews**: Before starting any feature and before release, confirm teams still meet all principles and guardrails; document outcomes in the relevant plan.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-10-16 | **Last Amended**: 2025-10-16
