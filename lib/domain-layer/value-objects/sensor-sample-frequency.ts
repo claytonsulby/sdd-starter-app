@@ -1,0 +1,1 @@
+export const sensorSampleFrequency = 400; // in Hz

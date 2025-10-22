@@ -1,0 +1,1 @@
+Framework coupled code e.g. Next, React-Native, Angular etc.
